@@ -1,0 +1,150 @@
+export interface SeedCategory {
+  id: string;
+  name: string;
+  icon: string;
+  bgClass: string;
+  iconColorClass: string;
+  badgeBgClass: string;
+  badgeTextClass: string;
+  colorHex: string;
+  defaultCap: number;
+  isDefault: boolean;
+}
+
+export const DEFAULT_SYSTEM_CATEGORIES: SeedCategory[] = [
+  {
+    id: 'food',
+    name: 'Food',
+    icon: 'restaurant',
+    bgClass: 'bg-[#d8e2ff]',
+    iconColorClass: 'text-[#004eaa]',
+    badgeBgClass: 'bg-[#e4eaff]',
+    badgeTextClass: 'text-[#004eaa]',
+    colorHex: '#fd761a',
+    defaultCap: 10000,
+    isDefault: true,
+  },
+  {
+    id: 'shopping',
+    name: 'Shopping',
+    icon: 'shopping_bag',
+    bgClass: 'bg-[#ffdbca]',
+    iconColorClass: 'text-[#9d4300]',
+    badgeBgClass: 'bg-[#ffdbca]',
+    badgeTextClass: 'text-[#9d4300]',
+    colorHex: '#0f766e',
+    defaultCap: 20000,
+    isDefault: true,
+  },
+  {
+    id: 'travel',
+    name: 'Travel',
+    icon: 'flight_takeoff',
+    bgClass: 'bg-[#ffdad6]',
+    iconColorClass: 'text-[#ba1a1a]',
+    badgeBgClass: 'bg-[#ffdad6]',
+    badgeTextClass: 'text-[#ba1a1a]',
+    colorHex: '#ba1a1a',
+    defaultCap: 5000,
+    isDefault: true,
+  },
+  {
+    id: 'entertainment',
+    name: 'Ent.',
+    icon: 'movie',
+    bgClass: 'bg-[#e5eeff]',
+    iconColorClass: 'text-[#0165d8]',
+    badgeBgClass: 'bg-[#dce9ff]',
+    badgeTextClass: 'text-[#0165d8]',
+    colorHex: '#0165d8',
+    defaultCap: 4000,
+    isDefault: true,
+  },
+  {
+    id: 'housing',
+    name: 'Housing',
+    icon: 'home',
+    bgClass: 'bg-[#dce9ff]',
+    iconColorClass: 'text-[#004eaa]',
+    badgeBgClass: 'bg-[#e4eaff]',
+    badgeTextClass: 'text-[#004eaa]',
+    colorHex: '#0165d8',
+    defaultCap: 20000,
+    isDefault: true,
+  },
+  {
+    id: 'utilities',
+    name: 'Utilities',
+    icon: 'bolt',
+    bgClass: 'bg-[#d8e2ff]',
+    iconColorClass: 'text-[#004eaa]',
+    badgeBgClass: 'bg-[#d8e2ff]',
+    badgeTextClass: 'text-[#004eaa]',
+    colorHex: '#004eaa',
+    defaultCap: 5000,
+    isDefault: true,
+  },
+  {
+    id: 'transport',
+    name: 'Transport',
+    icon: 'directions_car',
+    bgClass: 'bg-[#ffdad6]',
+    iconColorClass: 'text-[#ba1a1a]',
+    badgeBgClass: 'bg-[#ffdad6]',
+    badgeTextClass: 'text-[#ba1a1a]',
+    colorHex: '#ff7b72',
+    defaultCap: 5000,
+    isDefault: true,
+  },
+  {
+    id: 'other',
+    name: 'Other',
+    icon: 'category',
+    bgClass: 'bg-[#d3e4fe]',
+    iconColorClass: 'text-[#005c55]',
+    badgeBgClass: 'bg-[#e5eeff]',
+    badgeTextClass: 'text-[#005c55]',
+    colorHex: '#6e7977',
+    defaultCap: 3000,
+    isDefault: true,
+  },
+];
+
+export const DEMO_USERS = [
+  {
+    id: 'user-anjali',
+    name: 'Anjali Sharma',
+    email: 'anjali.sharma@example.com',
+    avatarUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuALJHF-hvH31xNBqTITD_O-8KMerMQELXYXRYccFFIwNqqcr6ojnfHfV6pj4Bfb009_ZBb9WVs_Tt8IqECY-GzBKDYhVT5SzkZVhEMmNpwkQD5oSQOQ-BYVNI1nA1LakhO05K7hVJ7OO7jqdAqiKryDQzPlUquhhqAbJoNbn5CZ0n78FZ_AMu7N_96xg0VRkCPhf-svK5yjI4-bOhkxLjtB3izHs-UHwkkQwB167rzegPaTepK7IPMhcw',
+    currencySymbol: '₹',
+    currencyCode: 'INR',
+    isPremium: false,
+    onboarded: true,
+    monthlySalary: 60000,
+    monthlySavingsGoal: 20000,
+  },
+  {
+    id: 'user-vikram',
+    name: 'Vikram Patel',
+    email: 'vikram.patel@techfin.io',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    currencySymbol: '₹',
+    currencyCode: 'INR',
+    isPremium: true,
+    onboarded: true,
+    monthlySalary: 95000,
+    monthlySavingsGoal: 35000,
+  },
+  {
+    id: 'user-sarah',
+    name: 'Sarah Chen',
+    email: 'sarah.chen@global.dev',
+    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    currencySymbol: '$',
+    currencyCode: 'USD',
+    isPremium: false,
+    onboarded: true,
+    monthlySalary: 2500,
+    monthlySavingsGoal: 800,
+  },
+];
