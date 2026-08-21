@@ -1,6 +1,6 @@
-import { createApp } from './src/server/app';
-import { ENV } from './src/server/config/env';
-import { logger } from './src/server/config/logger';
+import { createApp } from './app';
+import { ENV } from './config/env';
+import { logger } from './config/logger';
 
 async function startServer() {
   try {
@@ -8,7 +8,7 @@ async function startServer() {
     const PORT = ENV.PORT;
 
     app.listen(PORT, '0.0.0.0', () => {
-      logger.info(`Digi Track server running on http://0.0.0.0:${PORT}`);
+      logger.info(`Digi Track API server running on http://0.0.0.0:${PORT}`);
       logger.info(`Environment: ${ENV.NODE_ENV}`);
       logger.info(`API v1 Base: http://0.0.0.0:${PORT}/api/v1`);
       logger.info(`Health check: http://0.0.0.0:${PORT}/api/health`);
