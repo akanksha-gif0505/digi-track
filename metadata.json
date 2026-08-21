@@ -1,0 +1,6 @@
+{
+  "name": "Digi Track",
+  "description": "Smart rupee expense tracker and budgeting app with AI spending insights, interactive category graphs, automatic bill split calculator, and multi-format expense downloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
