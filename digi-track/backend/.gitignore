@@ -1,10 +1,9 @@
 # Dependencies
-node_modules
+node_modules/
 .pnpm-debug.log*
 
 # Build output
-dist
-*.cjs
+dist/
 *.js.map
 
 # Environment variables

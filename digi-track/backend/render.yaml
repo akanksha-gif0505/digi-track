@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: digi-track-backend
+    runtime: node
+    region: singapore   # change to oregon / frankfurt / ohio as preferred
+    plan: free
+
+    # Render clones the repo and uses this as the working directory.
+    # Root Directory in the dashboard must be set to:  digi-track/backend
+    rootDir: .
+
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+
+    # Health-check — Render uses this to confirm the service is up
+    healthCheckPath: /api/health
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "10000"          # Render assigns the real port via $PORT at runtime;
+                                 # this just sets a fallback default in the YAML.
+      - key: JWT_SECRET
+        sync: false             # Mark as secret — must be set manually in the Render dashboard
+      - key: JWT_EXPIRES_IN
+        value: "7d"
+      - key: GEMINI_API_KEY
+        sync: false             # Optional — set in dashboard only if you want AI insights
+      - key: APP_URL
+        sync: false             # Set to your Render service URL after first deploy, e.g.
+                                 # https://digi-track-backend.onrender.com
+      - key: ALLOWED_ORIGINS
+        sync: false             # Set to your frontend URL, e.g.
+                                 # https://your-frontend.vercel.app
+      - key: DATA_DIR
+        value: "/tmp/.data"     # Render's filesystem is ephemeral; /tmp is writable.
+                                 # Data will reset on each deploy — acceptable for a JSON
+                                 # flat-file DB demo. See note in README about persistence.
