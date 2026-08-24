@@ -1,0 +1,49 @@
+{
+  "hash": "10dc7de4",
+  "configHash": "1d3d4074",
+  "lockfileHash": "b2097878",
+  "browserHash": "331a7859",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "da510e06",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "a19f0fc5",
+      "needsInterop": true
+    },
+    "canvas-confetti": {
+      "src": "../../node_modules/canvas-confetti/dist/confetti.module.mjs",
+      "file": "canvas-confetti.js",
+      "fileHash": "c8804d6d",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "4fd9716f",
+      "needsInterop": true
+    },
+    "recharts": {
+      "src": "../../node_modules/recharts/es6/index.js",
+      "file": "recharts.js",
+      "fileHash": "3195a5b0",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-NCJOAUVN": {
+      "file": "chunk-NCJOAUVN.js"
+    },
+    "chunk-3R2MIHDY": {
+      "file": "chunk-3R2MIHDY.js"
+    },
+    "chunk-DC5AMYBS": {
+      "file": "chunk-DC5AMYBS.js"
+    }
+  }
+}
