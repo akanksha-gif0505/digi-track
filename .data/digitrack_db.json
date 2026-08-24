@@ -1,0 +1,683 @@
+{
+  "users": {
+    "user-anjali": {
+      "id": "user-anjali",
+      "name": "Anjali Sharma",
+      "email": "anjali.sharma@example.com",
+      "passwordHash": "$2a$10$wE9K2sT/dG8sJ21YvQvKZuVzW4J5jF5YF9s4J3Gz5F5YF9s4J3Gz5",
+      "avatarUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuALJHF-hvH31xNBqTITD_O-8KMerMQELXYXRYccFFIwNqqcr6ojnfHfV6pj4Bfb009_ZBb9WVs_Tt8IqECY-GzBKDYhVT5SzkZVhEMmNpwkQD5oSQOQ-BYVNI1nA1LakhO05K7hVJ7OO7jqdAqiKryDQzPlUquhhqAbJoNbn5CZ0n78FZ_AMu7N_96xg0VRkCPhf-svK5yjI4-bOhkxLjtB3izHs-UHwkkQwB167rzegPaTepK7IPMhcw",
+      "currencySymbol": "₹",
+      "currencyCode": "INR",
+      "isPremium": false,
+      "onboarded": true,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "user-vikram": {
+      "id": "user-vikram",
+      "name": "Vikram Patel",
+      "email": "vikram.patel@techfin.io",
+      "passwordHash": "$2a$10$wE9K2sT/dG8sJ21YvQvKZuVzW4J5jF5YF9s4J3Gz5F5YF9s4J3Gz5",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "currencySymbol": "₹",
+      "currencyCode": "INR",
+      "isPremium": true,
+      "onboarded": true,
+      "createdAt": 1787295816461,
+      "updatedAt": 1787295816461
+    },
+    "user-sarah": {
+      "id": "user-sarah",
+      "name": "Sarah Chen",
+      "email": "sarah.chen@global.dev",
+      "passwordHash": "$2a$10$wE9K2sT/dG8sJ21YvQvKZuVzW4J5jF5YF9s4J3Gz5F5YF9s4J3Gz5",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "currencySymbol": "$",
+      "currencyCode": "USD",
+      "isPremium": false,
+      "onboarded": true,
+      "createdAt": 1787295816461,
+      "updatedAt": 1787295816461
+    }
+  },
+  "expenses": {
+    "exp-1": {
+      "id": "exp-1",
+      "userId": "user-anjali",
+      "title": "Lunch at Cafe",
+      "amount": 350,
+      "category": "food",
+      "date": "2026-08-21",
+      "time": "01:15 PM",
+      "paymentMode": "Cash",
+      "note": "Team lunch with colleagues",
+      "createdAt": 1787288616462,
+      "updatedAt": 1787288616462
+    },
+    "exp-2": {
+      "id": "exp-2",
+      "userId": "user-anjali",
+      "title": "Uber to Office",
+      "amount": 280,
+      "category": "transport",
+      "date": "2026-08-21",
+      "time": "09:10 AM",
+      "paymentMode": "UPI",
+      "note": "Morning cab ride",
+      "createdAt": 1787274216462,
+      "updatedAt": 1787274216462
+    },
+    "exp-3": {
+      "id": "exp-3",
+      "userId": "user-anjali",
+      "title": "Reliance Fresh",
+      "amount": 1240,
+      "category": "shopping",
+      "date": "2026-08-21",
+      "time": "10:42 AM",
+      "paymentMode": "Card",
+      "note": "Weekly vegetables and pantry",
+      "createdAt": 1787281416462,
+      "updatedAt": 1787281416462
+    },
+    "exp-4": {
+      "id": "exp-4",
+      "userId": "user-anjali",
+      "title": "Groceries - Reliance",
+      "amount": 1450,
+      "category": "shopping",
+      "date": "2026-08-20",
+      "time": "06:30 PM",
+      "paymentMode": "Card",
+      "note": "Household essentials and snacks",
+      "createdAt": 1787202216462,
+      "updatedAt": 1787202216462
+    },
+    "exp-5": {
+      "id": "exp-5",
+      "userId": "user-anjali",
+      "title": "Electricity Bill",
+      "amount": 920,
+      "category": "utilities",
+      "date": "2026-08-20",
+      "time": "04:15 PM",
+      "paymentMode": "UPI",
+      "note": "Auto-pay scheduled",
+      "createdAt": 1787195016462,
+      "updatedAt": 1787195016462
+    },
+    "exp-6": {
+      "id": "exp-6",
+      "userId": "user-anjali",
+      "title": "Electricity Board",
+      "amount": 2450,
+      "category": "utilities",
+      "date": "2026-08-20",
+      "time": "11:00 AM",
+      "paymentMode": "UPI",
+      "note": "Main home power bill",
+      "createdAt": 1787180616462,
+      "updatedAt": 1787180616462
+    },
+    "exp-7": {
+      "id": "exp-7",
+      "userId": "user-anjali",
+      "title": "Indian Oil",
+      "amount": 3000,
+      "category": "transport",
+      "date": "2026-08-13",
+      "time": "08:20 AM",
+      "paymentMode": "Card",
+      "note": "Full tank petrol for car",
+      "createdAt": 1786604616462,
+      "updatedAt": 1786604616462
+    },
+    "exp-8": {
+      "id": "exp-8",
+      "userId": "user-anjali",
+      "title": "Apartment Rent",
+      "amount": 20000,
+      "category": "housing",
+      "date": "2026-08-06",
+      "time": "10:00 AM",
+      "paymentMode": "NetBanking",
+      "note": "Monthly rental transfer",
+      "createdAt": 1785999816462,
+      "updatedAt": 1785999816462
+    },
+    "exp-9": {
+      "id": "exp-9",
+      "userId": "user-anjali",
+      "title": "Supermarket Groceries",
+      "amount": 9710,
+      "category": "shopping",
+      "date": "2026-08-03",
+      "time": "05:40 PM",
+      "paymentMode": "Card",
+      "note": "Bulk monthly supplies",
+      "createdAt": 1785740616462,
+      "updatedAt": 1785740616462
+    },
+    "exp-10": {
+      "id": "exp-10",
+      "userId": "user-anjali",
+      "title": "Fine Dine Restaurant",
+      "amount": 5830,
+      "category": "food",
+      "date": "2026-08-01",
+      "time": "09:00 PM",
+      "paymentMode": "Card",
+      "note": "Family anniversary dinner",
+      "createdAt": 1785567816462,
+      "updatedAt": 1785567816462
+    },
+    "exp-1787295822020-iswxk": {
+      "id": "exp-1787295822020-iswxk",
+      "userId": "user-anjali",
+      "title": "Office Coffee & Snacks",
+      "amount": 220,
+      "category": "food",
+      "date": "2026-08-21",
+      "time": "04:15 PM",
+      "paymentMode": "UPI",
+      "note": "Evening filter coffee",
+      "createdAt": 1787295822020,
+      "updatedAt": 1787295822020
+    },
+    "exp-1787311156433-syn6c": {
+      "id": "exp-1787311156433-syn6c",
+      "userId": "user-anjali",
+      "title": "Office Coffee & Snacks",
+      "amount": 220,
+      "category": "food",
+      "date": "2026-08-21",
+      "time": "04:15 PM",
+      "paymentMode": "UPI",
+      "note": "Evening filter coffee",
+      "createdAt": 1787311156433,
+      "updatedAt": 1787311156433
+    }
+  },
+  "categories": {
+    "food": {
+      "id": "food",
+      "name": "Food",
+      "icon": "restaurant",
+      "bgClass": "bg-[#d8e2ff]",
+      "iconColorClass": "text-[#004eaa]",
+      "badgeBgClass": "bg-[#e4eaff]",
+      "badgeTextClass": "text-[#004eaa]",
+      "colorHex": "#fd761a",
+      "defaultCap": 10000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "shopping": {
+      "id": "shopping",
+      "name": "Shopping",
+      "icon": "shopping_bag",
+      "bgClass": "bg-[#ffdbca]",
+      "iconColorClass": "text-[#9d4300]",
+      "badgeBgClass": "bg-[#ffdbca]",
+      "badgeTextClass": "text-[#9d4300]",
+      "colorHex": "#0f766e",
+      "defaultCap": 20000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "travel": {
+      "id": "travel",
+      "name": "Travel",
+      "icon": "flight_takeoff",
+      "bgClass": "bg-[#ffdad6]",
+      "iconColorClass": "text-[#ba1a1a]",
+      "badgeBgClass": "bg-[#ffdad6]",
+      "badgeTextClass": "text-[#ba1a1a]",
+      "colorHex": "#ba1a1a",
+      "defaultCap": 5000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "entertainment": {
+      "id": "entertainment",
+      "name": "Ent.",
+      "icon": "movie",
+      "bgClass": "bg-[#e5eeff]",
+      "iconColorClass": "text-[#0165d8]",
+      "badgeBgClass": "bg-[#dce9ff]",
+      "badgeTextClass": "text-[#0165d8]",
+      "colorHex": "#0165d8",
+      "defaultCap": 4000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "housing": {
+      "id": "housing",
+      "name": "Housing",
+      "icon": "home",
+      "bgClass": "bg-[#dce9ff]",
+      "iconColorClass": "text-[#004eaa]",
+      "badgeBgClass": "bg-[#e4eaff]",
+      "badgeTextClass": "text-[#004eaa]",
+      "colorHex": "#0165d8",
+      "defaultCap": 20000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "utilities": {
+      "id": "utilities",
+      "name": "Utilities",
+      "icon": "bolt",
+      "bgClass": "bg-[#d8e2ff]",
+      "iconColorClass": "text-[#004eaa]",
+      "badgeBgClass": "bg-[#d8e2ff]",
+      "badgeTextClass": "text-[#004eaa]",
+      "colorHex": "#004eaa",
+      "defaultCap": 5000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "transport": {
+      "id": "transport",
+      "name": "Transport",
+      "icon": "directions_car",
+      "bgClass": "bg-[#ffdad6]",
+      "iconColorClass": "text-[#ba1a1a]",
+      "badgeBgClass": "bg-[#ffdad6]",
+      "badgeTextClass": "text-[#ba1a1a]",
+      "colorHex": "#ff7b72",
+      "defaultCap": 5000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "other": {
+      "id": "other",
+      "name": "Other",
+      "icon": "category",
+      "bgClass": "bg-[#d3e4fe]",
+      "iconColorClass": "text-[#005c55]",
+      "badgeBgClass": "bg-[#e5eeff]",
+      "badgeTextClass": "text-[#005c55]",
+      "colorHex": "#6e7977",
+      "defaultCap": 3000,
+      "isDefault": true,
+      "userId": null,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    }
+  },
+  "budgets": {
+    "user-anjali": {
+      "id": "bud-user-anjali",
+      "userId": "user-anjali",
+      "totalMonthlyBudget": 40000,
+      "selectedMonth": "August 2026",
+      "categoryCaps": {
+        "food": 10000,
+        "shopping": 20000,
+        "travel": 5000,
+        "entertainment": 4000,
+        "housing": 20000,
+        "utilities": 5000,
+        "transport": 5000,
+        "other": 3000
+      },
+      "createdAt": 1787295816461,
+      "updatedAt": 1787295816461
+    },
+    "user-vikram": {
+      "id": "bud-user-vikram",
+      "userId": "user-vikram",
+      "totalMonthlyBudget": 60000,
+      "selectedMonth": "August 2026",
+      "categoryCaps": {
+        "food": 10000,
+        "shopping": 20000,
+        "travel": 5000,
+        "entertainment": 4000,
+        "housing": 20000,
+        "utilities": 5000,
+        "transport": 5000,
+        "other": 3000
+      },
+      "createdAt": 1787295816461,
+      "updatedAt": 1787295816461
+    },
+    "user-sarah": {
+      "id": "bud-user-sarah",
+      "userId": "user-sarah",
+      "totalMonthlyBudget": 1700,
+      "selectedMonth": "August 2026",
+      "categoryCaps": {
+        "food": 10000,
+        "shopping": 20000,
+        "travel": 5000,
+        "entertainment": 4000,
+        "housing": 20000,
+        "utilities": 5000,
+        "transport": 5000,
+        "other": 3000
+      },
+      "createdAt": 1787295816462,
+      "updatedAt": 1787295816462
+    }
+  },
+  "savings": {
+    "user-anjali": {
+      "id": "sav-user-anjali",
+      "userId": "user-anjali",
+      "monthlySalary": 60000,
+      "monthlySavingsGoal": 20000,
+      "emergencyFundReserve": 50000,
+      "savingsLockEnabled": true,
+      "autoDeductSavings": true,
+      "createdAt": 1787295816388,
+      "updatedAt": 1787295816388
+    },
+    "user-vikram": {
+      "id": "sav-user-vikram",
+      "userId": "user-vikram",
+      "monthlySalary": 95000,
+      "monthlySavingsGoal": 35000,
+      "emergencyFundReserve": 50000,
+      "savingsLockEnabled": true,
+      "autoDeductSavings": true,
+      "createdAt": 1787295816461,
+      "updatedAt": 1787295816461
+    },
+    "user-sarah": {
+      "id": "sav-user-sarah",
+      "userId": "user-sarah",
+      "monthlySalary": 2500,
+      "monthlySavingsGoal": 800,
+      "emergencyFundReserve": 50000,
+      "savingsLockEnabled": true,
+      "autoDeductSavings": true,
+      "createdAt": 1787295816461,
+      "updatedAt": 1787295816461
+    }
+  },
+  "savingsGoals": {
+    "goal-1": {
+      "id": "goal-1",
+      "userId": "user-anjali",
+      "name": "Emergency Fund Vault",
+      "targetAmount": 100000,
+      "currentAmount": 45000,
+      "category": "emergency",
+      "icon": "shield_locked",
+      "targetDate": "2026-12-31",
+      "createdAt": 1787295816462,
+      "updatedAt": 1787295816462
+    },
+    "goal-2": {
+      "id": "goal-2",
+      "userId": "user-anjali",
+      "name": "Goa Holiday Trip",
+      "targetAmount": 25000,
+      "currentAmount": 18000,
+      "category": "vacation",
+      "icon": "beach_access",
+      "targetDate": "2026-11-15",
+      "createdAt": 1787295816462,
+      "updatedAt": 1787295816462
+    },
+    "goal-3": {
+      "id": "goal-3",
+      "userId": "user-anjali",
+      "name": "New MacBook Pro",
+      "targetAmount": 120000,
+      "currentAmount": 60000,
+      "category": "purchase",
+      "icon": "laptop_mac",
+      "targetDate": "2027-03-31",
+      "createdAt": 1787295816462,
+      "updatedAt": 1787295816462
+    },
+    "goal-1787295822103-kz02": {
+      "id": "goal-1787295822103-kz02",
+      "userId": "user-anjali",
+      "name": "Kyoto Vacation",
+      "targetAmount": 80000,
+      "currentAmount": 25000,
+      "category": "vacation",
+      "icon": "savings",
+      "createdAt": 1787295822103,
+      "updatedAt": 1787295822152
+    },
+    "goal-1787311156870-4mrh": {
+      "id": "goal-1787311156870-4mrh",
+      "userId": "user-anjali",
+      "name": "Kyoto Vacation",
+      "targetAmount": 80000,
+      "currentAmount": 25000,
+      "category": "vacation",
+      "icon": "savings",
+      "createdAt": 1787311156870,
+      "updatedAt": 1787311157088
+    }
+  },
+  "splits": {
+    "split-1": {
+      "id": "split-1",
+      "userId": "user-anjali",
+      "title": "Weekend Social Dinner & Drinks",
+      "totalAmount": 4800,
+      "category": "food",
+      "date": "2026-08-19",
+      "splitType": "equal",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "You",
+          "paidAmount": 4800,
+          "shareAmount": 1200,
+          "avatarColor": "#005c55"
+        },
+        {
+          "id": "p2",
+          "name": "Rahul",
+          "paidAmount": 0,
+          "shareAmount": 1200,
+          "avatarColor": "#004eaa"
+        },
+        {
+          "id": "p3",
+          "name": "Priya",
+          "paidAmount": 0,
+          "shareAmount": 1200,
+          "avatarColor": "#ba1a1a"
+        },
+        {
+          "id": "p4",
+          "name": "Vikram",
+          "paidAmount": 0,
+          "shareAmount": 1200,
+          "avatarColor": "#fd761a"
+        }
+      ],
+      "settlements": [
+        {
+          "from": "Rahul",
+          "to": "You",
+          "amount": 1200,
+          "settled": false
+        },
+        {
+          "from": "Priya",
+          "to": "You",
+          "amount": 1200,
+          "settled": true,
+          "settledAt": 1787292216462,
+          "settledPaymentMode": "UPI"
+        },
+        {
+          "from": "Vikram",
+          "to": "You",
+          "amount": 1200,
+          "settled": false
+        }
+      ],
+      "notes": "Pizza, pasta and drinks at Social CyberHub",
+      "createdAt": 1787123016462,
+      "updatedAt": 1787123016462
+    },
+    "split-2": {
+      "id": "split-2",
+      "userId": "user-anjali",
+      "title": "Goa Roadtrip Fuel & Fastag",
+      "totalAmount": 3600,
+      "category": "travel",
+      "date": "2026-08-15",
+      "splitType": "equal",
+      "participants": [
+        {
+          "id": "p1",
+          "name": "You",
+          "paidAmount": 0,
+          "shareAmount": 1200,
+          "avatarColor": "#005c55"
+        },
+        {
+          "id": "p4",
+          "name": "Vikram",
+          "paidAmount": 3600,
+          "shareAmount": 1200,
+          "avatarColor": "#fd761a"
+        },
+        {
+          "id": "p5",
+          "name": "Amit",
+          "paidAmount": 0,
+          "shareAmount": 1200,
+          "avatarColor": "#0165d8"
+        }
+      ],
+      "settlements": [
+        {
+          "from": "You",
+          "to": "Vikram",
+          "amount": 1200,
+          "settled": false
+        },
+        {
+          "from": "Amit",
+          "to": "Vikram",
+          "amount": 1200,
+          "settled": false
+        }
+      ],
+      "notes": "Highway diesel filling + tolls",
+      "createdAt": 1786777416462,
+      "updatedAt": 1786777416462
+    },
+    "split-1787295822162-evl3": {
+      "id": "split-1787295822162-evl3",
+      "userId": "user-anjali",
+      "title": "Weekend Brunch",
+      "totalAmount": 3000,
+      "category": "food",
+      "date": "2026-08-21",
+      "splitType": "equal",
+      "participants": [
+        {
+          "id": "you",
+          "name": "You",
+          "paidAmount": 3000,
+          "shareAmount": 1000
+        },
+        {
+          "id": "p1",
+          "name": "Rahul",
+          "paidAmount": 0,
+          "shareAmount": 1000
+        },
+        {
+          "id": "p2",
+          "name": "Priya",
+          "paidAmount": 0,
+          "shareAmount": 1000
+        }
+      ],
+      "settlements": [
+        {
+          "from": "Rahul",
+          "to": "You",
+          "amount": 1000,
+          "settled": true,
+          "settledAt": 1787295822176,
+          "settledPaymentMode": "UPI"
+        },
+        {
+          "from": "Priya",
+          "to": "You",
+          "amount": 1000,
+          "settled": false
+        }
+      ],
+      "createdAt": 1787295822162,
+      "updatedAt": 1787295822176
+    },
+    "split-1787311157126-lpyw": {
+      "id": "split-1787311157126-lpyw",
+      "userId": "user-anjali",
+      "title": "Weekend Brunch",
+      "totalAmount": 3000,
+      "category": "food",
+      "date": "2026-08-21",
+      "splitType": "equal",
+      "participants": [
+        {
+          "id": "you",
+          "name": "You",
+          "paidAmount": 3000,
+          "shareAmount": 1000
+        },
+        {
+          "id": "p1",
+          "name": "Rahul",
+          "paidAmount": 0,
+          "shareAmount": 1000
+        },
+        {
+          "id": "p2",
+          "name": "Priya",
+          "paidAmount": 0,
+          "shareAmount": 1000
+        }
+      ],
+      "settlements": [
+        {
+          "from": "Rahul",
+          "to": "You",
+          "amount": 1000,
+          "settled": true,
+          "settledAt": 1787311157168,
+          "settledPaymentMode": "UPI"
+        },
+        {
+          "from": "Priya",
+          "to": "You",
+          "amount": 1000,
+          "settled": false
+        }
+      ],
+      "createdAt": 1787311157126,
+      "updatedAt": 1787311157168
+    }
+  }
+}
